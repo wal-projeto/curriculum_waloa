@@ -7,11 +7,19 @@
  6. BOas praticas , SEO e Acessibilidade
 7. Assistir o video de como é a empresa google (esta dentro da pasta do Renato Augusto no you tube)
 
+
+Para criar um site atarave do Github-> criei um repositorio no git(curriculum_waloa), depois instalei o Git Desktop, atraves dele clonei o
+repositorio do GitHub nuvem para minha maquina, salvando em C:\Users\PC\Documents\GitHub\curriculum_waloa (ou seja, acabo de criar meu repositorio local),
+depois COPIEI meu arquivo HTML para dentro dele e comitei para a nuvem. Ja no Git Hub nuvem cliclei em Setting- Pages - coloquei branch main -
+e criei o Deploy do meu Site - clicando em Visit Site ja posso ver minha pagina na Internet. 
+Para atualizar o arquivo, ablo o VSCode - abro meu repositorio local que esta em C:\Users\PC\Documents\GitHub\curriculum_waloa e ja posso alterar o arquivo
+que automaticamente ja aparece no Git HUb Desktop para fazer commit e atualizar la no Git Hub remoto(nuvem)
  -->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!--PRIMEIROS ELEMENTOS DE PAGINA WEB-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +34,12 @@
                     <li> <a href= "#Sobre">Sobre mim </a> </li>
                     <li> <a href= "#Projetos"> Projetos </a> </li>
                     <li> <a href= "#Contatos"> Contatos </a> </li>
-                    <li> <a href= "https://www.google.com/" target ="_blanc" > Google </a> </li>
-                    <li> <a href="#portifolio"> Portfolio  </a> </li>
+                    <li> <a href= "https://www.google.com/" target ="_blank" > Google </a> </li>
+                    <li> Portfolio</li>
                 </ul>
             </nav>
         </header>
+
 
         <section id = "Sobre">
             <h2>Sobre mim</h2>
@@ -52,6 +61,46 @@
             </aside>
         </section>
 
+        <section id="habilidades">
+
+            <h2>Habilidades e tecnologias</h2>
+
+            <table>
+                <thead> <!--Cabeçalho da Tabela:  |Tecnologia|Nível|Descrição| -->
+                    <tr> <!-- Linhas-->
+                        <th>Tecnologias</th> <!--Colunas-->
+                        <th>Nível</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+
+                <tbody> <!--Corpo da Tabela-->
+                    <tr> <!-- Linhas-->
+                        <td>HTML</td>
+                        <td>Iniciante</td>
+                        <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediário</td> 
+                        <td>Experiência com flexbox, grid e animações CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>Desenvolvimento de script do lado do cliente para interações dinâmicas.</td>
+                    </tr>
+                </tbody>
+                 
+                    
+            </table>
+
+
+
+        </section>
+
+
+
 
         <section id = "Projetos">
             <h2>Projetos</h2>
@@ -60,28 +109,80 @@
                 <p> Eu sou Desenvolvedora Web full Stack</p>
             </article>
 
-            <aside id = #portifolio>
-                <h3>Portifólio</h3>
+            <aside>
+                <h3>Portifolio</h3>
                 
                 <p> Este é o meu primeiro projeto Front End ..</p>
 
             </aside>
         </section>
 
+
+
+
+
         <footer>  
             <p>Direitos reservados</p>
 
-            <section id = "#Contatos">  
+            <section id = "Contatos">  
                 <h2> Contatos</h2>
 
-                <p> Tem um projeto em mente, entre em contato.</p>
-            
+                <p> Tem um projeto em mente, entre em contato ainda este mês, nao deixe para depois</p>
+                
+                <!--
                 <address>
-                <!--<E-mail> waloa30@gmail.com</E-mail>-->
+                <E-mail> waloa30@gmail.com</E-mail>
                 Email : <a href="waloa30@gamil.com"> waloa30@gmail.com</a> <br>
-                Telefone: <a href="tel + 99999">9999999999</a>
+                Telefone: <a href="tel + 99999">99999
+                </adress>-->
+                
+                
+<!-- AGORA VAMOS APRENDER FAZER UM FORMULARIO PARA CONTATOS-->
+
+                <form action="">
+                    <label for="nome"> Nome: </label>
+                    <input type="text" id="nome" name="nome" required> <br>
+                    
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" required> <br>
+
+                    <label for="telefone"> Telefone: </label> 
+                    <input type="tel" id="telefone" name="telefone"> <br>
+
+                    <label for="assunto"> Assunto: </label>
+                    <select name="assunto" id="assunto">
+                        <option value="orcamento">Orçamento</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <br>
+
+                    <label for="mensagem"> Mensagem: </label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                    <br>
+
+                    <input type="checkbox" id="inscricao" name="inscricao">
+                    <label for= "inscricao"> Deseja receber minha newletter? Fique por dentro de novidades</label>
+                    <br>
+
+                    <input type="submit" value="Enviar mensagem" >
+
+                    <!--PARA EXPLORAR MELHOR TUDO SOBRE FORMULARIO E HTML VISITE A PAGINA WEB W3school e MDN-->
+                </form>
+
                 </address>
             </section>
         </footer>
+
+<!-- TABELAS E ESTRUTURAS DE DADOS - VAMOS INSERI-LA DENTRO DE UMA SEÇÃO DEPOIS DA SEÇÃO PROJETOS-->
+
+
+
+
+
+
+
+
+
     </body>
 </html>
